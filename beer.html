@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Biere</title>
+
+    <link rel="stylesheet" href="beer.css">
+
+    <!-- Backup für den Fall, dass das API nicht verfügbar ist -->
+    <script src="beers.json"></script>
+    <script src="beer.js"></script>
+</head>
+
+<body onload="loadBeers()">
+    <div id="modal-beer-info">
+    </div>
+
+    <h1>Beer database</h1>
+    <main id="beers" lang="en-US">
+        <div id="pages">
+            <button id="zurueck-btn">&lt;</button>
+            <span id="currentPageSpan">1</span>
+            <button id="next-btn">&gt;</button>
+        </div>
+    </main>
+</body>
